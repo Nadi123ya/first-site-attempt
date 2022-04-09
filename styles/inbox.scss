@@ -1,0 +1,160 @@
+.inboxes {
+  background-color: $background-color-light-beige;
+}
+
+.inbox {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 15px 30px 15px;
+  @include for-large-up {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+  }
+
+  &__decoration {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include for-large-up {
+      margin: 142px 0px 138px 193px;
+    }
+  }
+
+  &__image {
+    width: 290px;
+    @include for-large-up {
+      width: 425px;
+    }
+  }
+
+  &__image-caption {
+    display: none;
+    @include for-large-up {
+      display: block;
+      margin: 0;
+      margin-top: 15px;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 22px;
+      color: rgba(43, 41, 45, 0.6);
+      text-align: center;
+    }
+  }
+
+  &__inside {
+    @include for-large-up {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__text {
+    margin-top: 32px;
+    @include for-large-up {
+      margin: 0;
+      padding: 115px 130px 0px 190px;
+    }
+  }
+
+  &__subtitle {
+    margin-top: 32px;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 34px;
+    color: $text-color-orange;
+    @include for-large-up {
+      font-weight: 700;
+      font-size: 22px;
+      line-height: 34px;
+      max-width: 125px;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    margin-top: 17px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+    @include for-large-up {
+      font-weight: 700;
+      font-size: 56px;
+      line-height: 56px;
+      max-width: 462px;
+      margin-top: 0;
+      margin-top: 24px;
+    }
+  }
+
+  &__description {
+    margin: 0;
+    margin-top: 18px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 34px;
+    color: #2b292d;
+    @include for-large-up {
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 34px;
+      max-width: 462px;
+      margin-top: 0;
+      margin-top: 30px;
+    }
+  }
+
+  &__review {
+    background-color: $text-color-white;
+    padding: 30px 20px 26px 20px;
+    margin: 30px 15px 0px 15px;
+    box-shadow: 0px 1px 3px rgb(0 0 0 / 10%), 0px 4px 6px rgb(0 0 0 / 5%),
+      inset 0px 1px 0px rgb(255 255 255 / 10%);
+    border-bottom: solid 4px $text-color-light-blue;
+    @include for-large-up {
+      max-width: 519px;
+      margin: 0;
+      margin: 44px 144px 116px 164px;
+      padding: 30px 30px 26px 30px;
+    }
+  }
+
+  &__review-text {
+    margin: 0;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: $color-black;
+    @include for-large-up {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 28px;
+    }
+  }
+  &__review-about {
+    display: flex;
+  }
+  &__review-image {
+    margin-top: 28px;
+    width: 40px;
+    height: 40px;
+  }
+  &__review-data {
+    margin-top: 26px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 11px;
+  }
+  &__review-author {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+  }
+  &__review-position {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: $text-color-light-grey;
+  }
+}

@@ -11,14 +11,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
 
     <title>Document</title>
-    <link rel="stylesheet" href="styles/styles.css">
-    <link rel="stylesheet" href="styles/header.css">
-    <link rel="stylesheet" href="styles/footer.css">
-    <link rel="stylesheet" href="styles/headline.css">
-    <link rel="stylesheet" href="styles/common.css">
-    <link rel="stylesheet" href="styles/about.css">
-    <link rel="stylesheet" href="styles/customers.css">
-    <link rel="stylesheet" href="styles/features.css">
+    <link rel="stylesheet" href="styles.css">
+
 </head>
 
 <body>
@@ -52,7 +46,7 @@
                         on their behaviors.</p>
                     <div class="headline__actions">
                         <button class="action-button headline__action-btn">Get Started</button>
-                        <button class="headline__learn-more-btn headline__action-btn">Learn more</button>
+                        <button class="learn-more-btn headline__learn-more-btn">Learn more</button>
                     </div>
                 </div>
                 <img class="headline-banner" src="img/ouch.png" alt="Headline Banner">
@@ -76,15 +70,66 @@
         <!-- Customers -->
 
         <section class="customers">
-            <img class="customers__logo" src="img/logo-new-york-times.png" alt="The New York Times Logo">
-            <img class="customers__logo" src="img/logo-forbes.png" alt="Forbes Logo">
-            <img class="customers__logo" src="img/logo-apple.png" alt="Apple Logo">
-            <img class="customers__logo" src="img/logo-mashable.png" alt="Mashable Logo">
-            <img class="customers__logo" src="img/logo-wsj.png" alt="WSJ Logo">
-            <img class="customers__logo" src="img/logo-google.png" alt="Google Logo">
+            <div class="customers__row">
+                <div class="customers__item">
+                    <img class="customers__logo" src="img/logo-new-york-times.png" alt="The New York Times Logo">
+                </div>
+                <div class="customers__item">
+                    <img class="customers__logo" src="img/logo-forbes.png" alt="Forbes Logo">
+                </div>
+                <div class="customers__item">
+                    <img class="customers__logo" src="img/logo-apple.png" alt="Apple Logo">
+                </div>
+            </div>
+            <div class="customers__row">
+                <div class="customers__item">
+                    <img class="customers__logo" src="img/logo-mashable.png" alt="Mashable Logo">
+                </div>
+                <div class="customers__item">
+                    <img class="customers__logo" src="img/logo-wsj.png" alt="WSJ Logo">
+                </div>
+                <div class="customers__item">
+                    <img class="customers__logo" src="img/logo-google.png" alt="Google Logo">
+                </div>
+            </div>
         </section>
 
-        <!-- Features -->
+        <!-- Features - Mobile-->
+
+        <section class="tips">
+            <div class="tip">
+                <span class="tip__subtitle ">Acquire Customers</span>
+                <h3 class="tip__title">Easily find leads and customers</h3>
+                <p class="tip__description">Send one-off and automated email, push, and in-app messages to people.
+                    Create better stories.</p>
+                <figure class="tip__decoration">
+                    <img class="tip__image" src="img/tip-acquire-customer.png" alt="Aquire customers">
+                    <figcaption class="tip__image-caption">A better way to acquire new users</figcaption>
+                </figure>
+            </div>
+            <div class="tip">
+                <span class="tip__subtitle ">Engage Users</span>
+                <h3 class="tip__title">Engage with your audience</h3>
+                <p class="tip__description">Send one-off and automated email, push, and in-app messages to people.
+                    Create better stories.</p>
+                <figure class="tip__decoration">
+                    <img class="tip__image" src="img/tip-engage-users.png" alt="Engage users">
+                    <figcaption class="tip__image-caption">Knowledge base and smart self-service</figcaption>
+                </figure>
+            </div>
+            <div class="tip">
+                <span class="tip__subtitle ">Support</span>
+                <h3 class="tip__title">The best customer experiences</h3>
+                <p class="tip__description">A beautifully simple system for tracking, prioritizing, and solving customer
+                    support tickets.</p>
+                <figure class="tip__decoration">
+                    <img class="tip__image" src="img/tip-support.png" alt="Support">
+                    <figcaption class="tip__image-caption">Live chat and messaging</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- Features - Desktop -->
 
         <section class="features">
             <img class="features__left-decoration" src="img/hidden-ouch.png" alt="Half Hidden Head">
@@ -115,6 +160,213 @@
             <img class="features__bunner" src="img/invision-screen.png" alt="Invision Screen">
         </section>
 
+        <!-- Inbox -->
+
+        <section class="inboxes">
+            <div class="inbox">
+                <figure class="inbox__decoration">
+                    <img class="inbox__image" src="img/fortune-wheel.png" alt="Fortune wheel">
+                    <figcaption class="inbox__image-caption">Connect with customers and grow faster</figcaption>
+                </figure>
+                <div class="inbox__inside">
+                    <div class="inbox__text">
+                        <span class="inbox__subtitle ">Team Inbox</span>
+                        <h3 class="inbox__title">Manage conversations</h3>
+                        <p class="inbox__description">One place to manage and respond to all conversations with leads
+                            and users.
+                            Receive messages from leads.</p>
+                    </div>
+                    <div class="inbox__review">
+                        <p class="inbox__review-text">“Great widgets. Great selection. Great design and <b>easy to
+                                implement.</b> Definitely a huge time saver for a web developer!”</p>
+                        <div class="inbox__review-about">
+                            <img class="inbox__review-image" src="img/icon-viella.png" alt="Viella Malkovich">
+                            <div class="inbox__review-data">
+                                <span class="inbox__review-author"> Viella Malkovich </span>
+                                <span class="inbox__review-position">Creative Director at Johnson</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--  Audiences -->
+
+        <section class="audiences">
+            <div class="audience">
+                <div class="audience__inside">
+                    <span class="audience__subtitle ">Communicate Better</span>
+                    <h3 class="audience__title">Built for busy small teams</h3>
+                    <p class="audience__description">Three products that can be used independently or combined
+                        together for your company’s needs.</p>
+                    <button class="action-button audience__button">Get Started</button>
+                </div>
+                <figure class="audience__decoration">
+                    <img class="audience__image" src="img/holding-phone.png" alt="Holding the phone">
+                    <figcaption class="audience__image-caption">A better way to acquire new users</figcaption>
+                </figure>
+                <div class="audience__line hide_desktop"></div>
+            </div>
+            <div class="audience__line hide_mobile"></div>
+            <div class="audience__details">
+                <div class="audience__detail">
+                    <p class="audience__detail-text"><b>Subscriptions.</b> Foundation works with the tools and
+                        services you already use every day.
+                    </p>
+                    <a class="audience__detail-link" href="#">Learn more about subscriptions</a>
+                </div>
+                <div class="audience__detail">
+                    <p class="audience__detail-text"><b>Felxible Hours.</b> Get started with our simple snippet of
+                        JavaScript or easy to install SDKs for iOS and Android.
+                    </p>
+                    <a class="audience__detail-link" href="#">Get more info about hours</a>
+                </div>
+                <div class="audience__detail">
+                    <p class="audience__detail-text"><b>Fast Communication.</b> We offer measures like 2FA and SSO to
+                        ensure the safety of your data.
+                    </p>
+                    <a class="audience__detail-link" href="#">Communication guidelines</a>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Feedback -->
+
+        <section class="feedback">
+            <div class="content">
+                <span class="content__subtitle ">Engage Visitors</span>
+                <h3 class="content__title">Understand your audience</h3>
+                <p class="content__description">Early stage company? Eligible applicants get all of our products for
+                    just $49 a month.</p>
+                <div class="content__buttons">
+                    <button class="action-button content__action-btn">Get Started</button>
+                    <button class="learn-more-btn content__learn-more-btn">Learn more</button>
+                </div>
+            </div>
+            <div class="illustration">
+                <div class="container illustration__container-one">
+                    <img class="illustration__image" src="img/developers.png" alt="Developers">
+                    <span class="image-caption illustration__image-caption-one">Developers</span>
+                </div>
+                <div class="container illustration__container-two">
+                    <img class="illustration__image" src="img/entertainment.png" alt="Entertainment">
+                    <span class="image-caption illustration__image-caption-two">Entertainment</span>
+                </div>
+                <div class="container illustration__container-three">
+                    <img class="illustration__image" src="img/athletes.png" alt="Athletes">
+                    <span class="image-caption illustration__image-caption-three">Athletes</span>
+                </div>
+                <div class="container illustration__container-four">
+                    <img class="illustration__image" src="img/creators.png" alt="Creators">
+                    <span class="image-caption illustration__image-caption-four">Creators</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Hiring -->
+
+        <section class="hiring">
+            <section class="customer">
+                <div class="customer__row">
+                    <div class="customer__item">
+                        <img class="customer__logo" src="img/logo-new-york-times.png" alt="The New York Times Logo">
+                    </div>
+                    <div class="customer__item">
+                        <img class="customer__logo" src="img/logo-forbes.png" alt="Forbes Logo">
+                    </div>
+                    <div class="customer__item">
+                        <img class="customer__logo" src="img/logo-apple.png" alt="Apple Logo">
+                    </div>
+                </div>
+                <div class="customer__row">
+                    <div class="customer__item">
+                        <img class="customer__logo" src="img/logo-mashable.png" alt="Mashable Logo">
+                    </div>
+                    <div class="customer__item">
+                        <img class="customer__logo" src="img/logo-wsj.png" alt="WSJ Logo">
+                    </div>
+                    <div class="customer__item">
+                        <img class="customer__logo" src="img/logo-google.png" alt="Google Logo">
+                    </div>
+                </div>
+            </section>
+                    <div class="hire">
+                    <div class="hire__text">
+                        <p class="hire__subtitle">Trusted by the world’s most innovative businesses – big and small</p>
+                        <p class="hire__paragraph"> “Comprehensive set of startup tools for all imaginable entrepreneurial
+                            needs. Create landing pages, send emails, find freelancers. Perfect for sales, marketing, and
+                            support”</p>
+                            <div class="hire__author"> 
+                                <p class="hire__name" >Viella Malkovich</p> 
+                                <p class="hire__responsibilities">Creative Director at Johnson</p>
+                            </div>       
+                        </div>
+                        <div class="hire__dots">
+                            <input class="hire__dot" type="radio">
+                            <input class="hire__dot" type="radio">
+                            <input class="hire__dot" type="radio">
+                        </div>
+                        <img class="hire__image" src="img/baloon.png" alt="The baloon">
+                        <div class="footer__line hide_mobile"></div>
+                    </div>
+                        <div class="hire__line hide_desktop"></div>
+                        <div class="hire">
+                            <p class="hire__introduction-info">We’re hiring</p>
+                            <p class="hire__introduction-present">We’re a team of lifelong learners. We’re equal parts left and right brained.</p>
+                            <button class="action-button hire__action-btn">More about Company</button>
+                        <div class="hire__contacts">
+                            <div class="hire__contact">
+                                <div class="hire__info">
+                                    <p class="hire__position">Front-End Developer</p>
+                                    <p class="hire__location">Los Angeles / Remote</p>
+                                    <span class="hire__right-arrow-desktop"></span>
+                                </div>
+                                <div class="hire__check">
+                                    <span class="hire__right-arrow"></span>
+                                </div>
+                            </div>
+                            <div class="hire__contact">
+                                <div class="hire__info">
+                                    <p class="hire__position">Community Manager</p>
+                                    <p class="hire__location">New York / Full-Time</p>
+                                    <span class="hire__right-arrow-desktop"></span>
+                                </div>
+                                <div class="hire__check">
+                                    <span class="hire__right-arrow"></span>
+                                </div>
+                            </div>
+                            <div class="hire__contact">
+                                <div class="hire__info">
+                                    <p class="hire__position">Front-End Developer</p>
+                                    <p class="hire__location">UX/UI Designer</p>
+                                    <span class="hire__right-arrow-desktop"></span>
+                                </div>
+                                <div class="hire__check">
+                                    <span class="hire__right-arrow"></span>
+                                </div>
+                            </div>
+                        </div>                    
+                    </div>
+                </section>
+
+        <!-- Order -->
+
+        <section class="order">
+            <img class="order__illustration" src="img/dog-in-the-window.png" alt="The dog in the window">
+            <div class="order__details">
+                <h3 class="order__title">Start your free trial.</h3>
+                <p class="order__text">Get notified about company updates, news and blog posts. We hate spam.</p>
+                <form class="order__form">
+                    <input class="order__email" type="email" placeholder="Enter your email">
+                    <button class="action-button order__button">Get Started</button>
+                </form>
+                <p class="order__terms"> Free 14-day trial · Easy setup · Cancel any time. Check out <a
+                        class="order__terms-link" href="#">Terms of Use.</a> </p>
+            </div>
+        </section>
+
         <!-- Footer -->
 
         <footer class="footer">
@@ -127,6 +379,13 @@
                             <div class="logo__description">Startup landing template</div>
                         </div>
                     </div>
+                    <div class="logo-vertical">
+                        <img class="logo-vertical__image" src="img/icon-dark.png" alt="logo">
+                        <div class="logo-vertical__text">
+                            <div class="logo-vertical__name">Foundation</div>
+                            <div class="logo-vertical__description">Startup landing template</div>
+                        </div>
+                    </div>
                     <p class="footer__description">Foundation is a website template for startups and small teams. It
                         helps to build a website in no time.</p>
                     <div class="downloads">
@@ -134,6 +393,7 @@
                         <img src="img/google-play.png" alt="Google Play">
                     </div>
                 </div>
+                <div class="footer__line hide_desktop"></div>
                 <div class="additional-navigation">
                     <div class="additional-navigation__column nav-links">
                         <h3 class="nav-links__title">Product</h3>
@@ -155,11 +415,10 @@
                             <li class="nav-links__list-item">Support</li>
                         </ul>
                     </div>
-
                 </div>
-
             </div>
-            <div class="footer__line"></div>
+            <div class="footer__line hide_mobile"></div>
+
             <div class="footer-links">
                 <nav class="terms">
                     <a href="#" class="terms__items">Terms</a>
