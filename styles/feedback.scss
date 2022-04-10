@@ -1,6 +1,6 @@
 .feedback {
   padding: 50px 15px 50px 15px;
-  background-color: #00a1c61a;
+  background-color: $background-color-light-blue;
   @include for-large-up {
     padding: 108px 0 110px 0;
 }
@@ -65,8 +65,8 @@
 
   &__action-btn {
     width: 100%;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05),
-      inset 0px 1px 0px rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 1px 3px $box-shadow-color-grey, 0px 4px 6px $box-shadow-color-light-grey,
+      inset 0px 1px 0px $box-shadow-color-white;
       @include for-large-up {
         width: 160px;
       }
@@ -75,8 +75,8 @@
   &__learn-more-btn {
     width: 100%;
     color: $color-black;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05),
-      inset 0px 1px 0px rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 1px 3px $box-shadow-color-grey, 0px 4px 6px $box-shadow-color-light-grey,
+      inset 0px 1px 0px $box-shadow-color-white;
     @include for-large-up {
         margin-top: 0;
         margin-left: 10px;
@@ -163,9 +163,9 @@
   }
 }
 .container{
-  background-color: $text-color-white;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05),
-    inset 0px 1px 0px rgba(255, 255, 255, 0.1);
+  background-color: $color-white;
+  box-shadow: 0px 1px 3px $box-shadow-color-grey, 0px 4px 6px $box-shadow-color-light-grey,
+    inset 0px 1px 0px $box-shadow-color-white;
   border-radius: 8px;
   @include for-large-up {
     width: 262px;
@@ -174,8 +174,8 @@
     margin-left: 30px;}
 }
 .container:hover {
-  background-color: #3141c5;
-  color: $text-color-white;
+  background-color: $background-color-blue;
+  color: $color-white;
 }
 
 .image-caption{

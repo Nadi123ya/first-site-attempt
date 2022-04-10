@@ -1,6 +1,6 @@
 .order {
   padding: 50px 15px;
-  background-color: $color-light-grey;
+  background-color: $background-color-light-grey;
   
 
   @include for-large-up {
@@ -49,7 +49,7 @@
 
   &__email {
     margin-top: 40px;
-    background: $text-color-white;
+    background: $color-white;
     border: 1px solid $border-color-grey;
     border-radius: 2px;
     height: 48px;
