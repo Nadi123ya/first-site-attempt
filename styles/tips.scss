@@ -5,18 +5,17 @@
     display: none;
   }
 }
-
 .tip {
   padding: 40px 15px 0 15px;
   border-bottom: 1px solid $border-color-grey;
-  
+
   &__subtitle {
     font-weight: 700;
     font-size: 22px;
     line-height: 34px;
     color: $text-color-green;
   }
-  
+
   &__title {
     margin: 0;
     margin-top: 17px;
@@ -25,7 +24,7 @@
     line-height: 40px;
     letter-spacing: -0.357143px;
   }
-  
+
   &__description {
     font-weight: 400;
     font-size: 24px;
@@ -43,7 +42,7 @@
   &__image {
     margin-top: 29px;
   }
-  
+
   &__image-caption {
     font-weight: 400;
     font-size: 14px;

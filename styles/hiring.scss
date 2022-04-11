@@ -75,7 +75,7 @@
       width: 273px;
     }
   }
-  
+
   &__introduction-info {
     font-weight: 700;
     font-size: 40px;
@@ -115,7 +115,6 @@
     }
   }
   &__contacts {
-    
     @include for-large-up {
       margin: 110px 325px 110px 325px;
     }
@@ -132,17 +131,18 @@
     }
   }
 
-  &__contact:hover{
-      color:$color-white;
-      background-color: $background-color-dark-blue;
-      cursor: pointer;
-  }
-
   &__info {
     margin: 19px 21px 19px 20px;
     @include for-large-up {
       margin: 0;
       display: flex;
+    }
+  }
+  &__info:hover {
+    @include for-large-up {
+      color: $color-white;
+      background-color: $background-color-dark-blue;
+      cursor: pointer;
     }
   }
 
@@ -169,12 +169,17 @@
       margin: 28px 0 27px 0;
     }
   }
+  &__location:hover {
+    @include for-large-up {
+      color: $color-white;
+    }
+  }
 
   &__check {
     background-color: $background-color-light-grey;
     width: 50px;
     @include for-large-up {
-      display:none;
+      display: none;
     }
   }
   &__right-arrow {
@@ -183,32 +188,31 @@
     width: 7px;
     height: 12px;
     display: inline-block;
-
   }
-  &__right-arrow-desktop{
-    @include for-large-down{
+  &__right-arrow-desktop {
+    @include for-large-down {
       display: none;
     }
-    @include for-large-up{
-    margin: 35px 24.59px 34px 55px;
-    background-image: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-arrow-right.png");
-    width: 7px;
-    height: 12px;
-    display: inline-block;
+    @include for-large-up {
+      margin: 35px 24.59px 34px 55px;
+      background-image: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-arrow-right.png");
+      width: 7px;
+      height: 12px;
+      display: inline-block;
     }
   }
-  &__right-arrow-desktop:hover{
-    background-image: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-arrow-right-white.png");
+  &__right-arrow-desktop:hover {
+    @include for-large-up {
+      background-image: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-arrow-right-white.png");
+    }
   }
 }
-
 .hire:last-child {
   padding: 50px 15px 50px 15px;
   @include for-large-up {
     padding: 0;
   }
 }
-
 .customer {
   display: flex;
   flex-direction: column;

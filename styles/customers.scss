@@ -7,7 +7,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top:30px;
+    padding-top: 30px;
     padding-bottom: 106px;
     flex-direction: row;
   }
@@ -24,8 +24,8 @@
   &__row:last-child {
     @include for-large-up {
       margin-right: 130px;
-      margin-left:0;
-    } 
+      margin-left: 0;
+    }
   }
 
   &__item {
@@ -52,5 +52,3 @@
     max-width: 80%;
   }
 }
-
-

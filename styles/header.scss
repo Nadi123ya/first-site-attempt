@@ -36,18 +36,17 @@
   &__menu-icon {
     width: 18px;
     height: 13px;
-    background-image: url("ihttps://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-hamburger.png");
+    background-image: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-hamburger.png");
     display: inline-block;
   }
 
-  .logo__description{
+  .logo__description {
     display: none;
     @include for-large-up {
       display: block;
     }
   }
 }
-
 .navigation {
   display: none;
   @include for-large-up {
@@ -81,7 +80,6 @@
     margin-right: 0;
   }
 }
-
 .header .logo {
   display: flex;
 
@@ -114,12 +112,11 @@
       display: block;
       font-size: 18px;
       line-height: 25px;
-      color:$color-black;
+      color: $color-black;
       opacity: 0.6;
     }
   }
 }
-
 .top-section {
   background-color: $background-color-beige;
 

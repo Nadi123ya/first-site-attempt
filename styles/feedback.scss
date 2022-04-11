@@ -3,7 +3,7 @@
   background-color: $background-color-light-blue;
   @include for-large-up {
     padding: 108px 0 110px 0;
-}
+  }
 }
 .content {
   text-align: center;
@@ -65,26 +65,27 @@
 
   &__action-btn {
     width: 100%;
-    box-shadow: 0px 1px 3px $box-shadow-color-grey, 0px 4px 6px $box-shadow-color-light-grey,
+    box-shadow: 0px 1px 3px $box-shadow-color-grey,
+      0px 4px 6px $box-shadow-color-light-grey,
       inset 0px 1px 0px $box-shadow-color-white;
-      @include for-large-up {
-        width: 160px;
-      }
+    @include for-large-up {
+      width: 160px;
+    }
   }
 
   &__learn-more-btn {
     width: 100%;
     color: $color-black;
-    box-shadow: 0px 1px 3px $box-shadow-color-grey, 0px 4px 6px $box-shadow-color-light-grey,
+    box-shadow: 0px 1px 3px $box-shadow-color-grey,
+      0px 4px 6px $box-shadow-color-light-grey,
       inset 0px 1px 0px $box-shadow-color-white;
     @include for-large-up {
-        margin-top: 0;
-        margin-left: 10px;
-        width: 160px;
-      }
+      margin-top: 0;
+      margin-left: 10px;
+      width: 160px;
+    }
   }
 }
-
 .illustration {
   display: block;
   align-items: center;
@@ -101,84 +102,82 @@
     padding: 22px 100px 33px 71px;
     @include for-large-up {
       padding: 22px 62px 33px 62px;
-      }
+    }
   }
-  &__container-two{
+  &__container-two {
     margin-top: 15px;
     padding: 22px 74px 33px 74px;
     @include for-large-up {
       padding: 22px 60px 33px 60px;
-      }
-  
+    }
   }
 
-  &__container-three{
+  &__container-three {
     margin-top: 15px;
     padding: 22px 65px 33px 65px;
     @include for-large-up {
       padding: 22px 51px 33px 51px;
-      }
-
+    }
   }
 
-  &__container-four{
+  &__container-four {
     margin-top: 15px;
     padding: 22px 76px 33px 76px;
     @include for-large-up {
       padding: 22px 71px 33px 72px;
-      }
+    }
   }
 
   &__image {
     margin-bottom: 22px;
-   
   }
 
   &__image-caption-one {
     margin-left: 11px;
     @include for-large-up {
       margin-left: 6px;
-      }
+    }
   }
 
   &__image-caption-two {
     margin-left: -11px;
     @include for-large-up {
-      margin-left: -7px
-      }
+      margin-left: -7px;
+    }
   }
 
   &__image-caption-three {
     margin-left: 30px;
     @include for-large-up {
       margin-left: 34px;
-      }
+    }
   }
 
   &__image-caption-four {
     margin-left: 11px;
     @include for-large-up {
       margin-left: 16px;
-      }
+    }
   }
 }
-.container{
+.container {
   background-color: $color-white;
-  box-shadow: 0px 1px 3px $box-shadow-color-grey, 0px 4px 6px $box-shadow-color-light-grey,
+  box-shadow: 0px 1px 3px $box-shadow-color-grey,
+    0px 4px 6px $box-shadow-color-light-grey,
     inset 0px 1px 0px $box-shadow-color-white;
   border-radius: 8px;
   @include for-large-up {
     width: 262px;
     height: 300px;
     margin-top: 0;
-    margin-left: 30px;}
+    margin-left: 30px;
+  }
 }
 .container:hover {
   background-color: $background-color-blue;
   color: $color-white;
 }
-
-.image-caption{
+.image-caption {
   font-weight: 700;
   font-size: 22px;
   line-height: 28px;
