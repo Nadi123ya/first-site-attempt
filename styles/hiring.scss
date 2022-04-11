@@ -1,185 +1,142 @@
 .hire {
-  padding: 39px 15px 0 15px;
+  padding: 50px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   @include for-large-up {
-    padding: 0;
-    position: relative;
-  }
-
-  &__text {
-    display: flex;
-    flex-direction: column;
-    @include for-large-up {
-      text-align: center;
-    }
-  }
-
-  &__subtitle {
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 30px;
-    color: $color-blue;
-    margin: 0;
-    @include for-large-up {
-      margin-top: 76px;
-    }
-  }
-
-  &__paragraph {
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 34px;
-    margin: 0;
-    margin-top: 29px;
-    @include for-large-up {
-      margin: 28px 325px 0 325px;
-    }
-  }
-  &__author {
-    font-size: 16px;
-    line-height: 24px;
-    margin-top: 32px;
-    @include for-large-up {
-      margin-top: 34px;
-    }
-  }
-  &__name {
-    font-weight: 700;
-    margin: 0;
-  }
-  &__responsibilities {
-    margin: 0;
-    color: $text-color-light-grey;
-  }
-  &__dots {
-    margin: 40px 107px 0 108px;
-    @include for-large-up {
-      display: flex;
-      margin: 38px 675px 66px 675px;
-    }
-  }
-  &__dot {
-    margin-left: 19.5px;
-  }
-
-  &__dot:first-child {
-    margin-left: 0;
-  }
-
-  &__image {
-    margin-top: 40px;
-    width: 290px;
-    @include for-large-up {
-      position: absolute;
-      right: 0;
-      top: 152px;
-      width: 273px;
-    }
+    padding: 101px 325px 105px 325px;
   }
 
   &__introduction-info {
+    margin: 0;
     font-weight: 700;
     font-size: 40px;
     line-height: 40px;
-    text-align: center;
     letter-spacing: -0.357143px;
-    margin: 0;
     @include for-large-up {
-      margin: 0;
-      margin-top: 106px;
       font-weight: 700;
       font-size: 56px;
       line-height: 56px;
+      text-align: center;
+      letter-spacing: -0.5px;
     }
   }
 
   &__introduction-present {
-    font-weight: 400;
+    margin: 0;
+    margin-top: 18px;
     font-size: 24px;
     line-height: 34px;
     text-align: center;
-    margin: 0;
-    margin-top: 18px;
+    width: 100%;
     @include for-large-up {
-      margin: 0;
-      margin: 20px 423px 0 422px;
+      margin-top: 20px;
+      max-width: 555px;
     }
   }
 
   &__action-btn {
-    width: 290px;
-    margin-top: 47px;
+    margin-top: 30px;
+    width: 100%;
     margin-bottom: 39px;
     @include for-large-up {
-      width: 247px;
-      margin: 28px 576px 0 577px;
+      margin-top: 28px;
+      max-width: 247px;
     }
   }
   &__contacts {
+    margin-top: 39px;
     @include for-large-up {
-      margin: 110px 325px 110px 325px;
-    }
-  }
-  &__contact {
-    display: flex;
-    width: 290px;
-    border: 1px solid $border-color-grey;
-    border-radius: 8px;
-    margin-top: 15px;
-    @include for-large-up {
-      width: 750px;
-      height: 81px;
+      margin-top: 110px;
+      width: 100%;
     }
   }
 
   &__info {
-    margin: 19px 21px 19px 20px;
+    margin-top: 15px;
+    height: 140px;
+    width: 100%;
+    border: 1px solid rgba(43, 41, 45, 0.2);
+    border-radius: 8px;
+    text-decoration: none;
+    display: flex;
     @include for-large-up {
       margin: 0;
-      display: flex;
+      margin-bottom: 20px;
+      height: 81px;
     }
   }
-  &__info:hover {
+
+  &__info:first-child {
+    margin-top: 0;
     @include for-large-up {
-      color: $color-white;
-      background-color: $background-color-dark-blue;
-      cursor: pointer;
+    }
+  }
+
+  &__info:hover {
+    background-color: $background-color-dark-blue;
+    cursor: pointer;
+    color: $color-white;
+  }
+
+  &__info:hover &__position {
+    color: $color-white;
+  }
+
+  &__info:hover &__location {
+    color: $color-white;
+  }
+  &__info:hover &__check {
+    background-color: $background-color-dark-blue;
+  }
+
+  &__info:hover &__right-arrow {
+    background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-arrow-right-white.png);
+  }
+
+  &__details {
+    width: 100%;
+    @include for-large-up {
+      display: flex;
+      align-items: center;
     }
   }
 
   &__position {
-    font-weight: 700;
+    margin: 19px 21px 7px 20px;
+    height: 69px;
+    font-weight: bold;
     font-size: 22px;
     line-height: 28px;
+    color: $color-black;
     @include for-large-up {
+      margin: 0;
+      margin-left: 25px;
+      height: 29px;
       width: 408px;
-      margin: 26px 0 26px 25px;
     }
   }
   &__location {
-    font-weight: 400;
+    margin-left: 20px;
+    margin-bottom: 19px;
     font-size: 16px;
     line-height: 22px;
-    color: $text-color-light-grey;
-    margin: 0;
-    margin-top: 7px;
+    opacity: 0.6;
+    color: $color-black;
     @include for-large-up {
-      font-size: 18px;
-      line-height: 24px;
-      width: 232px;
-      margin: 28px 0 27px 0;
-    }
-  }
-  &__location:hover {
-    @include for-large-up {
-      color: $color-white;
+      margin: 0;
     }
   }
 
   &__check {
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 50px;
     background-color: $background-color-light-grey;
-    width: 50px;
     @include for-large-up {
-      display: none;
+      background-color: $color-white;
     }
   }
   &__right-arrow {
@@ -188,82 +145,5 @@
     width: 7px;
     height: 12px;
     display: inline-block;
-  }
-  &__right-arrow-desktop {
-    @include for-large-down {
-      display: none;
-    }
-    @include for-large-up {
-      margin: 35px 24.59px 34px 55px;
-      background-image: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-arrow-right.png");
-      width: 7px;
-      height: 12px;
-      display: inline-block;
-    }
-  }
-  &__right-arrow-desktop:hover {
-    @include for-large-up {
-      background-image: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-arrow-right-white.png");
-    }
-  }
-}
-.hire:last-child {
-  padding: 50px 15px 50px 15px;
-  @include for-large-up {
-    padding: 0;
-  }
-}
-.customer {
-  display: flex;
-  flex-direction: column;
-
-  @include for-large-up {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 43px;
-    padding-bottom: 0px;
-    flex-direction: row;
-  }
-
-  &__row {
-    display: flex;
-    @include for-large-up {
-      flex: 1;
-      justify-content: space-around;
-      margin-left: 130px;
-    }
-  }
-
-  &__row:last-child {
-    @include for-large-up {
-      margin-right: 130px;
-      margin-left: 0;
-    }
-  }
-
-  &__item {
-    height: 94px;
-    min-width: 107px;
-    border-bottom: 1px solid $border-color-grey;
-    border-right: 1px solid $border-color-grey;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex: 1;
-
-    &:last-child {
-      border-right: none;
-    }
-
-    @include for-large-up {
-      border: none;
-    }
-  }
-
-  &__logo {
-    filter: brightness(0);
-    max-width: 80%;
   }
 }

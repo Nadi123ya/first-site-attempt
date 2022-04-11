@@ -1,0 +1,129 @@
+.audience {
+  padding: 50px 15px;
+  background-color: $background-color-light-blue;
+  @include for-large-up {
+    padding: 108px 130px 110px 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__subtitle {
+    margin: 0;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 34px;
+  }
+
+  &__title {
+    margin: 0;
+    margin-top: 17px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: -0.357143px;
+    @include for-large-up {
+      margin-top: 24px;
+      width: 555px;
+      font-weight: 700;
+      font-size: 56px;
+      line-height: 56px;
+      letter-spacing: -0.5px;
+    }
+  }
+
+  &__description {
+    margin: 0;
+    margin-top: 18px;
+    margin-bottom: 30px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 34px;
+    @include for-large-up {
+      margin-top: 30px;
+      width: 555px;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+    @include for-large-up {
+      display: flex;
+      flex-direction: row;
+      margin: 34px 536px 0 536px;
+    }
+  }
+
+  &__action-btn {
+    width: 100%;
+    box-shadow: 0px 1px 3px $box-shadow-color-grey,
+      0px 4px 6px $box-shadow-color-light-grey,
+      inset 0px 1px 0px $box-shadow-color-white;
+    @include for-large-up {
+      width: 160px;
+      margin: 0;
+    }
+  }
+
+  &__learn-more-btn {
+    width: 100%;
+    color: $color-black;
+    box-shadow: 0px 1px 3px $box-shadow-color-grey,
+      0px 4px 6px $box-shadow-color-light-grey,
+      inset 0px 1px 0px $box-shadow-color-white;
+    @include for-large-up {
+      margin: 0 5px;
+      width: 160px;
+    }
+  }
+
+  &__illustration {
+    margin-top: 40px;
+    @include for-large-up {
+      margin-top: 111px;
+      display: flex;
+    }
+  }
+  &__category {
+    margin: 0;
+    margin-top: 15px;
+    padding: 22px 20px 33px 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: $color-white;
+    border-radius: 8px;
+    min-width: 262px;
+    min-height: 300px;
+    @include for-large-up {
+      margin-top: 0;
+      margin-right: 30px;
+    }
+  }
+
+  &__category:hover {
+    background-color: $background-color-dark-blue;
+    color: $color-white;
+    box-shadow: 0px 13px 18px $box-shadow-color-grey,
+      0px 11px 55px $box-shadow-color-light-grey;
+  }
+
+  &__category:first-child {
+    margin-top: 0;
+  }
+
+  &__image {
+    margin: auto;
+    margin-top: 0;
+    margin-bottom: 22px;
+  }
+
+  &__image-caption {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 28px;
+    text-align: center;
+  }
+}
