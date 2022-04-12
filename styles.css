@@ -1257,6 +1257,8 @@
   .audience__category {
     margin-top: 0;
     margin-right: 31px;
+    min-width: 262px;
+    min-height: 300px;
   }
 }
 .audience__category:hover {
