@@ -124,6 +124,11 @@
   &__category:first-child {
     margin-top: 0;
   }
+  &__category:last-child {
+    @include for-large-up {
+     margin-right:0;
+    }
+  }
 
   &__image {
     margin: auto;
