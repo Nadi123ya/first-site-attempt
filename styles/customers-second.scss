@@ -14,6 +14,7 @@
 
   &__row {
     display: flex;
+
     @include for-large-up {
       flex: 1;
       justify-content: space-around;
@@ -22,6 +23,7 @@
   }
 
   &__row:last-child {
+    
     @include for-large-up {
       margin-right: 130px;
       margin-left: 0;

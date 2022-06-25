@@ -12,6 +12,7 @@
   }
 }
 .article {
+  
   @include for-large-up {
     width: 555px;
   }

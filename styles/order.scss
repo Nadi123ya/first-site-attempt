@@ -15,6 +15,7 @@
 
   &__illustration {
     max-width: 200px;
+
     @include for-large-up {
       max-width: 269px;
       margin-right: 121px;
@@ -40,6 +41,7 @@
   }
 
   &__form {
+    
     @include for-large-up {
       display: flex;
       margin-top: 26px;

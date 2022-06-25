@@ -26,6 +26,7 @@ html {
 }
 .page {
   width: 100%;
+  
   @include for-large-up {
     display: flex;
     flex-direction: column;

@@ -20,20 +20,24 @@
   margin-top: 15px;
 }
 .headline__action-btn {
+
   @include for-large-down {
     width: 100%;
   }
 }
 .order__button {
+
   @include for-large-down {
     width: 100%;
   }
 }
+
 .hide_mobile {
   border: 0.5px solid $color-black;
   width: 100%;
   opacity: 0.1;
   margin-top: 40px;
+
   @include for-large-down {
     display: none;
   }
@@ -43,6 +47,7 @@
   width: 100%;
   opacity: 0.1;
   margin-top: 40px;
+  
   @include for-large-up {
     display: none;
   }
